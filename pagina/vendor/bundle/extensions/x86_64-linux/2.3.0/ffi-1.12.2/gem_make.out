@@ -1,0 +1,47 @@
+current directory: /home/usuario/practica_5/pagina/vendor/bundle/gems/ffi-1.12.2/ext/ffi_c
+/usr/share/rvm/rubies/ruby-2.3.0/bin/ruby -I /usr/share/rvm/rubies/ruby-2.3.0/lib/ruby/site_ruby/2.3.0 -r ./siteconf20200314-26820-as5i9q.rb extconf.rb
+checking for ffi_call() in -lffi... yes
+checking for ffi_closure_alloc()... yes
+checking for shlwapi.h... no
+checking for rb_thread_call_without_gvl()... yes
+checking for ruby_native_thread_p()... yes
+checking for ruby_thread_has_gvl_p()... yes
+checking for ffi_prep_cif_var()... yes
+checking for ffi_raw_call()... yes
+checking for ffi_prep_raw_closure()... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/usuario/practica_5/pagina/vendor/bundle/gems/ffi-1.12.2/ext/ffi_c
+make "DESTDIR=" clean
+
+current directory: /home/usuario/practica_5/pagina/vendor/bundle/gems/ffi-1.12.2/ext/ffi_c
+make "DESTDIR="
+compiling ffi.c
+compiling Types.c
+compiling StructByValue.c
+compiling FunctionInfo.c
+compiling ClosurePool.c
+compiling StructLayout.c
+compiling LongDouble.c
+compiling AbstractMemory.c
+compiling Call.c
+compiling Variadic.c
+compiling Function.c
+compiling Type.c
+compiling MappedType.c
+compiling LastError.c
+compiling MethodHandle.c
+compiling MemoryPointer.c
+compiling Platform.c
+compiling Struct.c
+compiling ArrayType.c
+compiling Buffer.c
+compiling DynamicLibrary.c
+compiling Pointer.c
+compiling Thread.c
+linking shared-object ffi_c.so
+
+current directory: /home/usuario/practica_5/pagina/vendor/bundle/gems/ffi-1.12.2/ext/ffi_c
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 ffi_c.so ./.gem.20200314-26820-1fqe1zg
