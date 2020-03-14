@@ -148,7 +148,7 @@ del contenido de dicha pagina. Se le llama `focus` a aquel elemento que esta act
 modo que si el usuario selecciona un `textbox` dicho elemento sera el que tenga el focus actual de la ventana, lo que le permitira al
 usuario al momento de escribir, que el contenido sea enviado a dicha `textbox`.
 
-Podemos encontrar un ejemplo de esto en <i>Example11.html</i>, en donde tendremos dos campos para introducir informacion, y vemos que
+Podemos encontrar un ejemplo de esto, en donde tendremos dos campos para introducir informacion, y vemos que
 al principio los marcos son de color negro, y al seleccionarlos, obtienen el focus y cambian a un gris.
 ```HTML
     <p>Name: <input type="text" data-help="Your full name"></p>
