@@ -1,0 +1,237 @@
+<h2 id="handling-events">Handling Events</h2>
+
+<p><strong>Autor : David Rodriguez Rodriguez</strong></p>
+
+<p><strong>Event handlers</strong></p>
+
+<p>Los controladores de eventos se tratan de aquellas funciones que nos permite hacer una función cuando pulsamos en esta.</p>
+
+<p>Con el codigo siguiente lo que haremos sera leer cuando el usuario hace click en cualquier lado de la ventana del navegador ya que el enlace “window” permite resgistrar los click en toda la pagina.</p>
+
+<pre><code class="language-HTML">&lt;p&gt;Click this document to activate the handler.&lt;/p&gt;
+&lt;script&gt;
+  window.addEventListener("click", () =&gt; {
+    console.log("You knocked?");
+  });
+&lt;/script&gt;
+</code></pre>
+
+<p><strong>Events and DOM nodes</strong></p>
+
+<p>Los controladores de eventos se registra en un determinado contexto, se pueden usar objetos contenidos en DOM. Estos objetos son invocados cuando ocurre el evento, en el ejemplo siguiente funciona cuando pulsamos el botón.</p>
+
+<p>El método <strong>addListener</strong> permite añadir cualquier tipo de controlodores, en cambio el metodo <strong>removeEventListener</strong> elimina el controlador del elemento que tiene asignado,en el siguiente codigo se puede ver como una vez que se pulse el botón este dejara de funcionar.</p>
+
+<pre><code class="language-HTML">&lt;button&gt;Act-once button&lt;/button&gt;
+&lt;script&gt;
+  let button = document.querySelector("button");
+  function once() {
+    console.log("Done.");
+    button.removeEventListener("click", once);
+  }
+  button.addEventListener("click", once);
+&lt;/script&gt;
+</code></pre>
+
+<p><strong>Event objects</strong></p>
+
+<p>El Event Object se pasa a la funcion controladora como un argumento, conteniendo información sobre el evento que puede tener unas propiedades determinadas, en el siguiente codigo se ve como obtenemos que tipo de click estamos haciendo con el raton sobre el botón.</p>
+
+<pre><code class="language-HTML">
+  &lt;button&gt;Click me any way you want&lt;/button&gt;
+    &lt;script&gt;
+      let button = document.querySelector("button");
+      button.addEventListener("mousedown", event =&gt; {
+        if (event.button == 0) {
+          console.log("Left button");
+        } else if (event.button == 1) {
+          console.log("Middle button");
+        } else if (event.button == 2) {
+          console.log("Right button");
+        }
+      });
+    &lt;/script&gt;
+</code></pre>
+<p><strong>Propagation</strong></p>
+
+<p>El método <strong>stopPropagation</strong> usado para evitar que los controladores reciban el evento.</p>
+
+<p><strong>Target</strong> se trata de unapropiedad para lanzar una red amplia para un tipo específico de evento, se puede usar esta propiedad para asegurarnos que no está manejando accidentalmente algo que se propagó desde un nodo que no desea manejar.</p>
+
+<pre><code class="language-HTML">&lt;p&gt;A paragraph with a &lt;button&gt;button&lt;/button&gt;.&lt;/p&gt;
+&lt;script&gt;
+  let para = document.querySelector("p");
+  let button = document.querySelector("button");
+  para.addEventListener("mousedown", () =&gt; {
+    console.log("Handler for paragraph.");
+  });
+  button.addEventListener("mousedown", event =&gt; {
+    console.log("Handler for button.");
+    if (event.button == 2) event.stopPropagation();
+  });
+&lt;/script&gt;
+</code></pre>
+
+<p><strong>Default actions</strong></p>
+
+<p>El metodo <strong>preventDefault</strong> permite al usuario a configurar el comportamiento de la pagina evitando que funcione de manera normal, por lo con este método podremos crear atajos en nuestra pagina mediante teclado o menú, aunque existen algunas limitaciones dependiendo del navegador en el que nos encontremos.</p>
+
+<pre><code class="language-HTML">&lt;a href="https://developer.mozilla.org/"&gt;MDN&lt;/a&gt;
+&lt;script&gt;
+  let link = document.querySelector("a");
+  link.addEventListener("click", event =&gt; {
+    console.log("Nope.");
+    event.preventDefault();
+  });
+&lt;/script&gt;
+</code></pre>
+
+<p><strong>Key events</strong></p>
+
+<p>Los eventos por clave se trata de leer las teclas del teclado una vez se pulsa o mantiente se siguen enviado repetidamente hasta que dejamos de pulsar la tecla, por lo que habrá que tener cuidado cuando se use un botón DOM ya que cuando se presiona una tecla y lo elimina nuevamente cuando se suelta la tecla, puede agregar accidentalmente cientos de botones.</p>
+
+<p>El siguiente codigo de ejemplo, funciona cuando pulsamos la tecla <strong>V</strong> pondrá el fondo de la página en “violeta”.</p>
+
+<pre><code class="language-HTML">&lt;p&gt;This page turns violet when you hold the V key.&lt;/p&gt;
+&lt;script&gt;
+  window.addEventListener("keydown", event =&gt; {
+    if (event.key == "v") {
+      document.body.style.background = "violet";
+    }
+  });
+  window.addEventListener("keyup", event =&gt; {
+    if (event.key == "v") {
+      document.body.style.background = "";
+    }
+  });
+&lt;/script&gt;
+</code></pre>
+
+<p><strong>Pointer events</strong></p>
+
+<p>Existen dos formas para señalar por pantalla, que se trata del ratón y las pantallas táctiles</p>
+
+<h5 id="mouse-clicks">Mouse clicks:</h5>
+<p>Existen metodos parecidos a los de teclado pero en este caso son <strong>“mousedown”</strong> y <strong>“mouseup”</strong> , funcionan en los nodos DOM que en los que se encuentra el puntero del ratón.</p>
+
+<p>Cuando queremos obtener la informacion del lugar del suceso, existe la propiedad <strong>clientX</strong> y <strong>clientY</strong>  que obtiene las coordenadas delevento en pixeles</p>
+
+<p>El siguiente <a href="/ejemplos/Mouse_clicks.html">codigo</a> su función es poner un punto de clolor justo debajo del puntero cunado hacemos click.</p>
+
+<h5 id="mouse-motion">Mouse motion:</h5>
+
+<p>Siempre que se mueve el ratón un evento “mousemove”, es util  para rastrear la posición del ratón.</p>
+
+<p>En el código de ejemplo que se nos da podemos ver que su objetivos es alargar o estrecha de izquiera a derecha según necesitemos una barra, al tener “window” si nos salimos de la barra continuara moviendo la barra hasta que soltemos el click.</p>
+
+<h5 id="touch-event-">Touch Event :</h5>
+
+<p>Cuando se comienza a tocar la pantalla se obtiene un evento <strong>touchstart</strong>, cuando nos movemos mientras mantenemos seran los eventos <strong>touchmove</strong> y cuando dejemos de precionar será el evento <strong>touchend</strong>.</p>
+
+<h5 id="scroll-events-">Scroll events :</h5>
+
+<p>Cada vez que usamos el scroll de ratón este activara un evento. Los principales usos de este tipo de evento es ver que parte de la pagina está mirando el usuario asi como realizar acciones cada a la vez que baja con el scroll.</p>
+
+<h5 id="focus-event">Focus Event:</h5>
+
+<h5 id="load-event">Load event</h5>
+
+<h5 id="events-and-the-event-loop">Events and the event loop</h5>
+
+<h5 id="timers">Timers</h5>
+
+<h5 id="debouncing">Debouncing</h5>
+
+<h5 id="summary">Summary</h5>
+
+<h3 id="ejercicios">Ejercicios:</h3>
+
+<h5 id="ejercicio-1">Ejercicio 1:</h5>
+
+<p>Censored Keyboard: program a text field (an input tag) where the letters Q, W, and X cannot be typed into.</p>
+
+<pre><code class="language-JavaScript">&lt;input type="text"&gt;
+&lt;script&gt;
+  var field = document.querySelector("input");
+  field.addEventListener("keydown", function(event) {
+    if (event.keyCode == "Q".charCodeAt(0) ||
+        event.keyCode == "W".charCodeAt(0) ||
+        event.keyCode == "X".charCodeAt(0))
+      event.preventDefault();
+  });
+&lt;/script&gt;
+</code></pre>
+
+<h5 id="ejercicio-2">Ejercicio 2:</h5>
+
+<p>Mouse trail: a series of images that would follow the mouse pointer as you moved it across the page.</p>
+
+<pre><code class="language-HTML">&lt;style&gt;
+    .trail {
+        position: absolute;
+        height: 5px; width: 5px;
+        border-radius: 4px;
+        background: black;
+    }
+    body {
+        height: 300px;
+    }
+&lt;/style&gt;
+&lt;body&gt;
+    &lt;script&gt;
+    var dots = [];
+    for (var i = 0; i &lt;= 10; i++) {
+      var node = document.createElement("div");
+      node.className = "trail";
+      document.body.appendChild(node);
+      dots.push(node);
+    }
+    var currentDot = 0;
+    
+    addEventListener("mousemove", function(event) {
+      var dot = dots[currentDot];
+      dot.style.left = (event.pageX - 3) + "px";
+      dot.style.top = (event.pageY - 3) + "px";
+      currentDot = (currentDot + 1) % dots.length;
+    });
+  &lt;/script&gt;
+
+
+</code></pre>
+
+<h5 id="tabs-a-tabbed-interface-it-allows-you-to-select-an-interface-panel-by-choosing-from-a-number-of-tabs-sticking-out-above-an-element">Tabs: A tabbed interface. It allows you to select an interface panel by choosing from a number of tabs sticking out above an element.</h5>
+
+<pre><code class="language-HTML">&lt;div id="panel"&gt;
+        &lt;div data-tabname="one"&gt;Tab one&lt;/div&gt;
+        &lt;div data-tabname="two"&gt;Tab two&lt;/div&gt;
+        &lt;div data-tabname="three"&gt;Tab three&lt;/div&gt;
+    &lt;/div&gt;
+      &lt;script&gt;
+        function asTabs(node) {
+          let tabs = Array.from(node.children).map(node =&gt; {
+            let button = document.createElement("button");
+            button.textContent = node.getAttribute("data-tabname");
+            let tab = {node, button};
+            button.addEventListener("click", () =&gt; selectTab(tab));
+            return tab;
+          });
+      
+          let tabList = document.createElement("div");
+          for (let {button} of tabs) tabList.appendChild(button);
+          node.insertBefore(tabList, node.firstChild);
+      
+          function selectTab(selectedTab) {
+            for (let tab of tabs) {
+              let selected = tab == selectedTab;
+              tab.node.style.display = selected ? "" : "none";
+              tab.button.style.color = selected ? "red" : "";
+            }
+          }
+          selectTab(tabs[0]);
+        }
+      
+        asTabs(document.querySelector("#panel"));
+    &lt;/script&gt;
+
+</code></pre>
+

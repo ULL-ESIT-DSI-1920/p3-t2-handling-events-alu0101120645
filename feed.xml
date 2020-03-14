@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-03-14T19:55:01+00:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2020/03/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-03-14T19:49:06+00:00</published><updated>2020-03-14T19:49:06+00:00</updated><id>/jekyll/update/2020/03/14/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2020/03/14/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-03-14T20:28:19+00:00</updated><id>/feed.xml</id><title type="html">Practica 5</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2020/03/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-03-14T19:49:06+00:00</published><updated>2020-03-14T19:49:06+00:00</updated><id>/jekyll/update/2020/03/14/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2020/03/14/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -10,4 +10,239 @@
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Readme</title><link href="/2020/03/14/README.html" rel="alternate" type="text/html" title="Readme" /><published>2020-03-14T00:00:00+00:00</published><updated>2020-03-14T00:00:00+00:00</updated><id>/2020/03/14/README</id><content type="html" xml:base="/2020/03/14/README.html">&lt;h2 id=&quot;handling-events&quot;&gt;Handling Events&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Autor : David Rodriguez Rodriguez&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Event handlers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Los controladores de eventos se tratan de aquellas funciones que nos permite hacer una función cuando pulsamos en esta.&lt;/p&gt;
+
+&lt;p&gt;Con el codigo siguiente lo que haremos sera leer cuando el usuario hace click en cualquier lado de la ventana del navegador ya que el enlace “window” permite resgistrar los click en toda la pagina.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;p&amp;gt;Click this document to activate the handler.&amp;lt;/p&amp;gt;
+&amp;lt;script&amp;gt;
+  window.addEventListener(&quot;click&quot;, () =&amp;gt; {
+    console.log(&quot;You knocked?&quot;);
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Events and DOM nodes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Los controladores de eventos se registra en un determinado contexto, se pueden usar objetos contenidos en DOM. Estos objetos son invocados cuando ocurre el evento, en el ejemplo siguiente funciona cuando pulsamos el botón.&lt;/p&gt;
+
+&lt;p&gt;El método &lt;strong&gt;addListener&lt;/strong&gt; permite añadir cualquier tipo de controlodores, en cambio el metodo &lt;strong&gt;removeEventListener&lt;/strong&gt; elimina el controlador del elemento que tiene asignado,en el siguiente codigo se puede ver como una vez que se pulse el botón este dejara de funcionar.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;button&amp;gt;Act-once button&amp;lt;/button&amp;gt;
+&amp;lt;script&amp;gt;
+  let button = document.querySelector(&quot;button&quot;);
+  function once() {
+    console.log(&quot;Done.&quot;);
+    button.removeEventListener(&quot;click&quot;, once);
+  }
+  button.addEventListener(&quot;click&quot;, once);
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Event objects&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El Event Object se pasa a la funcion controladora como un argumento, conteniendo información sobre el evento que puede tener unas propiedades determinadas, en el siguiente codigo se ve como obtenemos que tipo de click estamos haciendo con el raton sobre el botón.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;
+  &amp;lt;button&amp;gt;Click me any way you want&amp;lt;/button&amp;gt;
+    &amp;lt;script&amp;gt;
+      let button = document.querySelector(&quot;button&quot;);
+      button.addEventListener(&quot;mousedown&quot;, event =&amp;gt; {
+        if (event.button == 0) {
+          console.log(&quot;Left button&quot;);
+        } else if (event.button == 1) {
+          console.log(&quot;Middle button&quot;);
+        } else if (event.button == 2) {
+          console.log(&quot;Right button&quot;);
+        }
+      });
+    &amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;Propagation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El método &lt;strong&gt;stopPropagation&lt;/strong&gt; usado para evitar que los controladores reciban el evento.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Target&lt;/strong&gt; se trata de unapropiedad para lanzar una red amplia para un tipo específico de evento, se puede usar esta propiedad para asegurarnos que no está manejando accidentalmente algo que se propagó desde un nodo que no desea manejar.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;p&amp;gt;A paragraph with a &amp;lt;button&amp;gt;button&amp;lt;/button&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;script&amp;gt;
+  let para = document.querySelector(&quot;p&quot;);
+  let button = document.querySelector(&quot;button&quot;);
+  para.addEventListener(&quot;mousedown&quot;, () =&amp;gt; {
+    console.log(&quot;Handler for paragraph.&quot;);
+  });
+  button.addEventListener(&quot;mousedown&quot;, event =&amp;gt; {
+    console.log(&quot;Handler for button.&quot;);
+    if (event.button == 2) event.stopPropagation();
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Default actions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El metodo &lt;strong&gt;preventDefault&lt;/strong&gt; permite al usuario a configurar el comportamiento de la pagina evitando que funcione de manera normal, por lo con este método podremos crear atajos en nuestra pagina mediante teclado o menú, aunque existen algunas limitaciones dependiendo del navegador en el que nos encontremos.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;a href=&quot;https://developer.mozilla.org/&quot;&amp;gt;MDN&amp;lt;/a&amp;gt;
+&amp;lt;script&amp;gt;
+  let link = document.querySelector(&quot;a&quot;);
+  link.addEventListener(&quot;click&quot;, event =&amp;gt; {
+    console.log(&quot;Nope.&quot;);
+    event.preventDefault();
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Key events&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Los eventos por clave se trata de leer las teclas del teclado una vez se pulsa o mantiente se siguen enviado repetidamente hasta que dejamos de pulsar la tecla, por lo que habrá que tener cuidado cuando se use un botón DOM ya que cuando se presiona una tecla y lo elimina nuevamente cuando se suelta la tecla, puede agregar accidentalmente cientos de botones.&lt;/p&gt;
+
+&lt;p&gt;El siguiente codigo de ejemplo, funciona cuando pulsamos la tecla &lt;strong&gt;V&lt;/strong&gt; pondrá el fondo de la página en “violeta”.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;p&amp;gt;This page turns violet when you hold the V key.&amp;lt;/p&amp;gt;
+&amp;lt;script&amp;gt;
+  window.addEventListener(&quot;keydown&quot;, event =&amp;gt; {
+    if (event.key == &quot;v&quot;) {
+      document.body.style.background = &quot;violet&quot;;
+    }
+  });
+  window.addEventListener(&quot;keyup&quot;, event =&amp;gt; {
+    if (event.key == &quot;v&quot;) {
+      document.body.style.background = &quot;&quot;;
+    }
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;Pointer events&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Existen dos formas para señalar por pantalla, que se trata del ratón y las pantallas táctiles&lt;/p&gt;
+
+&lt;h5 id=&quot;mouse-clicks&quot;&gt;Mouse clicks:&lt;/h5&gt;
+&lt;p&gt;Existen metodos parecidos a los de teclado pero en este caso son &lt;strong&gt;“mousedown”&lt;/strong&gt; y &lt;strong&gt;“mouseup”&lt;/strong&gt; , funcionan en los nodos DOM que en los que se encuentra el puntero del ratón.&lt;/p&gt;
+
+&lt;p&gt;Cuando queremos obtener la informacion del lugar del suceso, existe la propiedad &lt;strong&gt;clientX&lt;/strong&gt; y &lt;strong&gt;clientY&lt;/strong&gt;  que obtiene las coordenadas delevento en pixeles&lt;/p&gt;
+
+&lt;p&gt;El siguiente &lt;a href=&quot;/ejemplos/Mouse_clicks.html&quot;&gt;codigo&lt;/a&gt; su función es poner un punto de clolor justo debajo del puntero cunado hacemos click.&lt;/p&gt;
+
+&lt;h5 id=&quot;mouse-motion&quot;&gt;Mouse motion:&lt;/h5&gt;
+
+&lt;p&gt;Siempre que se mueve el ratón un evento “mousemove”, es util  para rastrear la posición del ratón.&lt;/p&gt;
+
+&lt;p&gt;En el código de ejemplo que se nos da podemos ver que su objetivos es alargar o estrecha de izquiera a derecha según necesitemos una barra, al tener “window” si nos salimos de la barra continuara moviendo la barra hasta que soltemos el click.&lt;/p&gt;
+
+&lt;h5 id=&quot;touch-event-&quot;&gt;Touch Event :&lt;/h5&gt;
+
+&lt;p&gt;Cuando se comienza a tocar la pantalla se obtiene un evento &lt;strong&gt;touchstart&lt;/strong&gt;, cuando nos movemos mientras mantenemos seran los eventos &lt;strong&gt;touchmove&lt;/strong&gt; y cuando dejemos de precionar será el evento &lt;strong&gt;touchend&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;scroll-events-&quot;&gt;Scroll events :&lt;/h5&gt;
+
+&lt;p&gt;Cada vez que usamos el scroll de ratón este activara un evento. Los principales usos de este tipo de evento es ver que parte de la pagina está mirando el usuario asi como realizar acciones cada a la vez que baja con el scroll.&lt;/p&gt;
+
+&lt;h5 id=&quot;focus-event&quot;&gt;Focus Event:&lt;/h5&gt;
+
+&lt;h5 id=&quot;load-event&quot;&gt;Load event&lt;/h5&gt;
+
+&lt;h5 id=&quot;events-and-the-event-loop&quot;&gt;Events and the event loop&lt;/h5&gt;
+
+&lt;h5 id=&quot;timers&quot;&gt;Timers&lt;/h5&gt;
+
+&lt;h5 id=&quot;debouncing&quot;&gt;Debouncing&lt;/h5&gt;
+
+&lt;h5 id=&quot;summary&quot;&gt;Summary&lt;/h5&gt;
+
+&lt;h3 id=&quot;ejercicios&quot;&gt;Ejercicios:&lt;/h3&gt;
+
+&lt;h5 id=&quot;ejercicio-1&quot;&gt;Ejercicio 1:&lt;/h5&gt;
+
+&lt;p&gt;Censored Keyboard: program a text field (an input tag) where the letters Q, W, and X cannot be typed into.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;&amp;lt;input type=&quot;text&quot;&amp;gt;
+&amp;lt;script&amp;gt;
+  var field = document.querySelector(&quot;input&quot;);
+  field.addEventListener(&quot;keydown&quot;, function(event) {
+    if (event.keyCode == &quot;Q&quot;.charCodeAt(0) ||
+        event.keyCode == &quot;W&quot;.charCodeAt(0) ||
+        event.keyCode == &quot;X&quot;.charCodeAt(0))
+      event.preventDefault();
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;ejercicio-2&quot;&gt;Ejercicio 2:&lt;/h5&gt;
+
+&lt;p&gt;Mouse trail: a series of images that would follow the mouse pointer as you moved it across the page.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;style&amp;gt;
+    .trail {
+        position: absolute;
+        height: 5px; width: 5px;
+        border-radius: 4px;
+        background: black;
+    }
+    body {
+        height: 300px;
+    }
+&amp;lt;/style&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;script&amp;gt;
+    var dots = [];
+    for (var i = 0; i &amp;lt;= 10; i++) {
+      var node = document.createElement(&quot;div&quot;);
+      node.className = &quot;trail&quot;;
+      document.body.appendChild(node);
+      dots.push(node);
+    }
+    var currentDot = 0;
+    
+    addEventListener(&quot;mousemove&quot;, function(event) {
+      var dot = dots[currentDot];
+      dot.style.left = (event.pageX - 3) + &quot;px&quot;;
+      dot.style.top = (event.pageY - 3) + &quot;px&quot;;
+      currentDot = (currentDot + 1) % dots.length;
+    });
+  &amp;lt;/script&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&quot;tabs-a-tabbed-interface-it-allows-you-to-select-an-interface-panel-by-choosing-from-a-number-of-tabs-sticking-out-above-an-element&quot;&gt;Tabs: A tabbed interface. It allows you to select an interface panel by choosing from a number of tabs sticking out above an element.&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;div id=&quot;panel&quot;&amp;gt;
+        &amp;lt;div data-tabname=&quot;one&quot;&amp;gt;Tab one&amp;lt;/div&amp;gt;
+        &amp;lt;div data-tabname=&quot;two&quot;&amp;gt;Tab two&amp;lt;/div&amp;gt;
+        &amp;lt;div data-tabname=&quot;three&quot;&amp;gt;Tab three&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+      &amp;lt;script&amp;gt;
+        function asTabs(node) {
+          let tabs = Array.from(node.children).map(node =&amp;gt; {
+            let button = document.createElement(&quot;button&quot;);
+            button.textContent = node.getAttribute(&quot;data-tabname&quot;);
+            let tab = {node, button};
+            button.addEventListener(&quot;click&quot;, () =&amp;gt; selectTab(tab));
+            return tab;
+          });
+      
+          let tabList = document.createElement(&quot;div&quot;);
+          for (let {button} of tabs) tabList.appendChild(button);
+          node.insertBefore(tabList, node.firstChild);
+      
+          function selectTab(selectedTab) {
+            for (let tab of tabs) {
+              let selected = tab == selectedTab;
+              tab.node.style.display = selected ? &quot;&quot; : &quot;none&quot;;
+              tab.button.style.color = selected ? &quot;red&quot; : &quot;&quot;;
+            }
+          }
+          selectTab(tabs[0]);
+        }
+      
+        asTabs(document.querySelector(&quot;#panel&quot;));
+    &amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Handling Events</summary></entry></feed>
