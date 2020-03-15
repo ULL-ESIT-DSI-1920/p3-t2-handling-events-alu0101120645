@@ -1,0 +1,92 @@
+find_header: checking for libxml/tree.h in /home/usuario/p5/informe/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.9/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2... -------------------- no
+
+"cc -o conftest -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 conftest.c  -L. -L/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/lib -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib -L. -fstack-protector-strong -rdynamic -Wl,-export-dynamic -L/home/linuxbrew/.linuxbrew/opt/libyaml/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/libyaml/lib -L/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/openssl@1.1/lib -L/home/linuxbrew/.linuxbrew/opt/readline/lib  -Wl,-rpath,/home/linuxbrew/.linuxbrew/opt/readline/lib     -Wl,-rpath,/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/lib -L/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/lib -lruby  -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"cc -E -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99  conftest.c -o conftest.i"
+conftest.c:3:25: fatal error: libxml/tree.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/tree.h>
+/* end */
+
+"cc -E -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -I/home/usuario/p5/informe/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.9/ports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2 conftest.c -o conftest.i"
+conftest.c:3:25: fatal error: libxml/tree.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/tree.h>
+/* end */
+
+--------------------
+
+find_header: checking for libxml/tree.h in ports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2... -------------------- yes
+
+"cc -E -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99  conftest.c -o conftest.i"
+conftest.c:3:25: fatal error: libxml/tree.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/tree.h>
+/* end */
+
+"cc -E -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0 -I.  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -Iports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2 conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/tree.h>
+/* end */
+
+--------------------
+
+find_header: checking for nokogiri.h in /home/usuario/p5/informe/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.9/ext/nokogiri... -------------------- no
+
+"cc -E -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0 -I. -Iports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99  conftest.c -o conftest.i"
+conftest.c:3:22: fatal error: nokogiri.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <nokogiri.h>
+/* end */
+
+"cc -E -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/backward -I/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0 -I. -Iports/x86_64-pc-linux-gnu/libxml2/2.9.10/include/libxml2  -I/home/linuxbrew/.linuxbrew/opt/libyaml/include -I/home/linuxbrew/.linuxbrew/opt/openssl@1.1/include -I/home/linuxbrew/.linuxbrew/opt/readline/include   -O3 -ggdb3 -Wall -Wextra -Wdeclaration-after-statement -Wdeprecated-declarations -Wimplicit-function-declaration -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wno-maybe-uninitialized  -fPIC -std=c99 -I/home/usuario/p5/informe/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.9/ext/nokogiri conftest.c -o conftest.i"
+In file included from conftest.c:3:0:
+/home/usuario/p5/informe/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.9/ext/nokogiri/nokogiri.h:13:0: warning: "_GNU_SOURCE" redefined
+ #define _GNU_SOURCE
+ ^
+In file included from /home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby/ruby.h:24:0,
+                 from /home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/ruby.h:33,
+                 from conftest.c:1:
+/home/linuxbrew/.linuxbrew/Cellar/ruby/2.6.5/include/ruby-2.6.0/x86_64-linux/ruby/config.h:16:0: note: this is the location of the previous definition
+ #define _GNU_SOURCE 1
+ ^
+In file included from conftest.c:3:0:
+/home/usuario/p5/informe/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.9/ext/nokogiri/nokogiri.h:31:32: fatal error: libxslt/extensions.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <nokogiri.h>
+/* end */
+
+--------------------
+
