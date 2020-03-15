@@ -3,17 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About | Practica 5</title>
+<title>Events and DOM nodes | Practica 5</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="About" />
+<meta property="og:title" content="Events and DOM nodes" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="/about/" />
-<meta property="og:url" content="/about/" />
+<meta name="description" content="Events and DOM nodes" />
+<meta property="og:description" content="Events and DOM nodes" />
+<link rel="canonical" href="/jekyll/update/2020/03/14/Events-and-Dom.html" />
+<meta property="og:url" content="/jekyll/update/2020/03/14/Events-and-Dom.html" />
 <meta property="og:site_name" content="Practica 5" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-14T20:59:06+00:00" />
 <script type="application/ld+json">
-{"headline":"About","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","name":"Practica 5","url":"/about/","@context":"https://schema.org"}</script>
+{"headline":"Events and DOM nodes","dateModified":"2020-03-14T20:59:06+00:00","datePublished":"2020-03-14T20:59:06+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/update/2020/03/14/Events-and-Dom.html"},"description":"Events and DOM nodes","@type":"BlogPosting","url":"/jekyll/update/2020/03/14/Events-and-Dom.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Practica 5" /></head>
 <body><header class="site-header" role="banner">
@@ -33,26 +35,35 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Events and DOM nodes</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-14T20:59:06+00:00" itemprop="datePublished">Mar 14, 2020
+      </time></p>
   </header>
 
-  <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><strong>Events and DOM nodes</strong></p>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+<p>Los controladores de eventos se registra en un determinado contexto, se pueden usar objetos contenidos en DOM. Estos objetos son invocados cuando ocurre el evento, en el ejemplo siguiente funciona cuando pulsamos el botón.</p>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<p>El método <strong>addListener</strong> permite añadir cualquier tipo de controlodores, en cambio el metodo <strong>removeEventListener</strong> elimina el controlador del elemento que tiene asignado,en el siguiente codigo se puede ver como una vez que se pulse el botón este dejara de funcionar.</p>
+
+<pre><code class="language-HTML">&lt;button&gt;Act-once button&lt;/button&gt;
+&lt;script&gt;
+  let button = document.querySelector("button");
+  function once() {
+    console.log("Done.");
+    button.removeEventListener("click", once);
+  }
+  button.addEventListener("click", once);
+&lt;/script&gt;
+</code></pre>
 
 
-  </div>
-
+  </div><a class="u-url" href="/jekyll/update/2020/03/14/Events-and-Dom.html" hidden></a>
 </article>
 
       </div>

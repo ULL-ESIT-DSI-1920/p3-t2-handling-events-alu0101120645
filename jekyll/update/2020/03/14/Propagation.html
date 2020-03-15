@@ -3,17 +3,19 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>About | Practica 5</title>
+<title>Propagation | Practica 5</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="About" />
+<meta property="og:title" content="Propagation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="/about/" />
-<meta property="og:url" content="/about/" />
+<meta name="description" content="Propagation El método stopPropagation usado para evitar que los controladores reciban el evento." />
+<meta property="og:description" content="Propagation El método stopPropagation usado para evitar que los controladores reciban el evento." />
+<link rel="canonical" href="/jekyll/update/2020/03/14/Propagation.html" />
+<meta property="og:url" content="/jekyll/update/2020/03/14/Propagation.html" />
 <meta property="og:site_name" content="Practica 5" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-14T20:58:17+00:00" />
 <script type="application/ld+json">
-{"headline":"About","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebSite","name":"Practica 5","url":"/about/","@context":"https://schema.org"}</script>
+{"headline":"Propagation","dateModified":"2020-03-14T20:58:17+00:00","datePublished":"2020-03-14T20:58:17+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll/update/2020/03/14/Propagation.html"},"description":"Propagation El método stopPropagation usado para evitar que los controladores reciban el evento.","@type":"BlogPosting","url":"/jekyll/update/2020/03/14/Propagation.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Practica 5" /></head>
 <body><header class="site-header" role="banner">
@@ -33,26 +35,36 @@
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <article class="post">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Propagation</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-14T20:58:17+00:00" itemprop="datePublished">Mar 14, 2020
+      </time></p>
   </header>
 
-  <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="https://jekyllrb.com/">jekyllrb.com</a></p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <h5 id="propagation">Propagation</h5>
+<p>El método <strong>stopPropagation</strong> usado para evitar que los controladores reciban el evento.</p>
 
-<p>You can find the source code for Minima at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/minima">minima</a></p>
+<p><strong>Target</strong> se trata de unapropiedad para lanzar una red amplia para un tipo específico de evento, se puede usar esta propiedad para asegurarnos que no está manejando accidentalmente algo que se propagó desde un nodo que no desea manejar.</p>
 
-<p>You can find the source code for Jekyll at GitHub:
-<a href="https://github.com/jekyll">jekyll</a> /
-<a href="https://github.com/jekyll/jekyll">jekyll</a></p>
+<pre><code class="language-HTML">&lt;p&gt;A paragraph with a &lt;button&gt;button&lt;/button&gt;.&lt;/p&gt;
+&lt;script&gt;
+  let para = document.querySelector("p");
+  let button = document.querySelector("button");
+  para.addEventListener("mousedown", () =&gt; {
+    console.log("Handler for paragraph.");
+  });
+  button.addEventListener("mousedown", event =&gt; {
+    console.log("Handler for button.");
+    if (event.button == 2) event.stopPropagation();
+  });
+&lt;/script&gt;
+</code></pre>
 
-
-  </div>
-
+  </div><a class="u-url" href="/jekyll/update/2020/03/14/Propagation.html" hidden></a>
 </article>
 
       </div>

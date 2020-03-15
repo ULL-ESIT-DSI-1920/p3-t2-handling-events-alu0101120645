@@ -1,16 +1,216 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-03-14T20:28:19+00:00</updated><id>/feed.xml</id><title type="html">Practica 5</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2020/03/14/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-03-14T19:49:06+00:00</published><updated>2020-03-14T19:49:06+00:00</updated><id>/jekyll/update/2020/03/14/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2020/03/14/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-03-15T11:08:32+00:00</updated><id>/feed.xml</id><title type="html">Practica 5</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Events and DOM nodes</title><link href="/jekyll/update/2020/03/14/Events-and-Dom.html" rel="alternate" type="text/html" title="Events and DOM nodes" /><published>2020-03-14T20:59:06+00:00</published><updated>2020-03-14T20:59:06+00:00</updated><id>/jekyll/update/2020/03/14/Events-and-Dom</id><content type="html" xml:base="/jekyll/update/2020/03/14/Events-and-Dom.html">&lt;p&gt;&lt;strong&gt;Events and DOM nodes&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+&lt;p&gt;Los controladores de eventos se registra en un determinado contexto, se pueden usar objetos contenidos en DOM. Estos objetos son invocados cuando ocurre el evento, en el ejemplo siguiente funciona cuando pulsamos el botón.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;El método &lt;strong&gt;addListener&lt;/strong&gt; permite añadir cualquier tipo de controlodores, en cambio el metodo &lt;strong&gt;removeEventListener&lt;/strong&gt; elimina el controlador del elemento que tiene asignado,en el siguiente codigo se puede ver como una vez que se pulse el botón este dejara de funcionar.&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;button&amp;gt;Act-once button&amp;lt;/button&amp;gt;
+&amp;lt;script&amp;gt;
+  let button = document.querySelector(&quot;button&quot;);
+  function once() {
+    console.log(&quot;Done.&quot;);
+    button.removeEventListener(&quot;click&quot;, once);
+  }
+  button.addEventListener(&quot;click&quot;, once);
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Events and DOM nodes</summary></entry><entry><title type="html">Propagation</title><link href="/jekyll/update/2020/03/14/Propagation.html" rel="alternate" type="text/html" title="Propagation" /><published>2020-03-14T20:58:17+00:00</published><updated>2020-03-14T20:58:17+00:00</updated><id>/jekyll/update/2020/03/14/Propagation</id><content type="html" xml:base="/jekyll/update/2020/03/14/Propagation.html">&lt;h5 id=&quot;propagation&quot;&gt;Propagation&lt;/h5&gt;
+&lt;p&gt;El método &lt;strong&gt;stopPropagation&lt;/strong&gt; usado para evitar que los controladores reciban el evento.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry><entry><title type="html">Readme</title><link href="/2020/03/14/README.html" rel="alternate" type="text/html" title="Readme" /><published>2020-03-14T00:00:00+00:00</published><updated>2020-03-14T00:00:00+00:00</updated><id>/2020/03/14/README</id><content type="html" xml:base="/2020/03/14/README.html">&lt;h2 id=&quot;handling-events&quot;&gt;Handling Events&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Target&lt;/strong&gt; se trata de unapropiedad para lanzar una red amplia para un tipo específico de evento, se puede usar esta propiedad para asegurarnos que no está manejando accidentalmente algo que se propagó desde un nodo que no desea manejar.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;p&amp;gt;A paragraph with a &amp;lt;button&amp;gt;button&amp;lt;/button&amp;gt;.&amp;lt;/p&amp;gt;
+&amp;lt;script&amp;gt;
+  let para = document.querySelector(&quot;p&quot;);
+  let button = document.querySelector(&quot;button&quot;);
+  para.addEventListener(&quot;mousedown&quot;, () =&amp;gt; {
+    console.log(&quot;Handler for paragraph.&quot;);
+  });
+  button.addEventListener(&quot;mousedown&quot;, event =&amp;gt; {
+    console.log(&quot;Handler for button.&quot;);
+    if (event.button == 2) event.stopPropagation();
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Propagation El método stopPropagation usado para evitar que los controladores reciban el evento.</summary></entry><entry><title type="html">Keys events</title><link href="/jekyll/update/2020/03/14/Key-events.html" rel="alternate" type="text/html" title="Keys events" /><published>2020-03-14T20:58:07+00:00</published><updated>2020-03-14T20:58:07+00:00</updated><id>/jekyll/update/2020/03/14/Key-events</id><content type="html" xml:base="/jekyll/update/2020/03/14/Key-events.html">&lt;p&gt;&lt;strong&gt;Key events&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Los eventos por clave se trata de leer las teclas del teclado una vez se pulsa o mantiente se siguen enviado repetidamente hasta que dejamos de pulsar la tecla, por lo que habrá que tener cuidado cuando se use un botón DOM ya que cuando se presiona una tecla y lo elimina nuevamente cuando se suelta la tecla, puede agregar accidentalmente cientos de botones.&lt;/p&gt;
+
+&lt;p&gt;El siguiente codigo de ejemplo, funciona cuando pulsamos la tecla &lt;strong&gt;V&lt;/strong&gt; pondrá el fondo de la página en “violeta”.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;p&amp;gt;This page turns violet when you hold the V key.&amp;lt;/p&amp;gt;
+&amp;lt;script&amp;gt;
+  window.addEventListener(&quot;keydown&quot;, event =&amp;gt; {
+    if (event.key == &quot;v&quot;) {
+      document.body.style.background = &quot;violet&quot;;
+    }
+  });
+  window.addEventListener(&quot;keyup&quot;, event =&amp;gt; {
+    if (event.key == &quot;v&quot;) {
+      document.body.style.background = &quot;&quot;;
+    }
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Key events</summary></entry><entry><title type="html">Ejercicio-3</title><link href="/jekyll/update/2020/03/14/Ejercicio3.html" rel="alternate" type="text/html" title="Ejercicio-3" /><published>2020-03-14T20:55:10+00:00</published><updated>2020-03-14T20:55:10+00:00</updated><id>/jekyll/update/2020/03/14/Ejercicio3</id><content type="html" xml:base="/jekyll/update/2020/03/14/Ejercicio3.html">&lt;h5 id=&quot;tabs-a-tabbed-interface-it-allows-you-to-select-an-interface-panel-by-choosing-from-a-number-of-tabs-sticking-out-above-an-element&quot;&gt;Tabs: A tabbed interface. It allows you to select an interface panel by choosing from a number of tabs sticking out above an element.&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;div id=&quot;panel&quot;&amp;gt;
+        &amp;lt;div data-tabname=&quot;one&quot;&amp;gt;Tab one&amp;lt;/div&amp;gt;
+        &amp;lt;div data-tabname=&quot;two&quot;&amp;gt;Tab two&amp;lt;/div&amp;gt;
+        &amp;lt;div data-tabname=&quot;three&quot;&amp;gt;Tab three&amp;lt;/div&amp;gt;
+    &amp;lt;/div&amp;gt;
+      &amp;lt;script&amp;gt;
+        function asTabs(node) {
+          let tabs = Array.from(node.children).map(node =&amp;gt; {
+            let button = document.createElement(&quot;button&quot;);
+            button.textContent = node.getAttribute(&quot;data-tabname&quot;);
+            let tab = {node, button};
+            button.addEventListener(&quot;click&quot;, () =&amp;gt; selectTab(tab));
+            return tab;
+          });
+      
+          let tabList = document.createElement(&quot;div&quot;);
+          for (let {button} of tabs) tabList.appendChild(button);
+          node.insertBefore(tabList, node.firstChild);
+      
+          function selectTab(selectedTab) {
+            for (let tab of tabs) {
+              let selected = tab == selectedTab;
+              tab.node.style.display = selected ? &quot;&quot; : &quot;none&quot;;
+              tab.button.style.color = selected ? &quot;red&quot; : &quot;&quot;;
+            }
+          }
+          selectTab(tabs[0]);
+        }
+      
+        asTabs(document.querySelector(&quot;#panel&quot;));
+    &amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Tabs: A tabbed interface. It allows you to select an interface panel by choosing from a number of tabs sticking out above an element.</summary></entry><entry><title type="html">Ejercicio-2</title><link href="/jekyll/update/2020/03/14/Ejercicio2.html" rel="alternate" type="text/html" title="Ejercicio-2" /><published>2020-03-14T20:55:09+00:00</published><updated>2020-03-14T20:55:09+00:00</updated><id>/jekyll/update/2020/03/14/Ejercicio2</id><content type="html" xml:base="/jekyll/update/2020/03/14/Ejercicio2.html">&lt;h5 id=&quot;ejercicio-2&quot;&gt;Ejercicio 2:&lt;/h5&gt;
+
+&lt;p&gt;Mouse trail: a series of images that would follow the mouse pointer as you moved it across the page.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;style&amp;gt;
+    .trail {
+        position: absolute;
+        height: 5px; width: 5px;
+        border-radius: 4px;
+        background: black;
+    }
+    body {
+        height: 300px;
+    }
+&amp;lt;/style&amp;gt;
+&amp;lt;body&amp;gt;
+    &amp;lt;script&amp;gt;
+    var dots = [];
+    for (var i = 0; i &amp;lt;= 10; i++) {
+      var node = document.createElement(&quot;div&quot;);
+      node.className = &quot;trail&quot;;
+      document.body.appendChild(node);
+      dots.push(node);
+    }
+    var currentDot = 0;
+    
+    addEventListener(&quot;mousemove&quot;, function(event) {
+      var dot = dots[currentDot];
+      dot.style.left = (event.pageX - 3) + &quot;px&quot;;
+      dot.style.top = (event.pageY - 3) + &quot;px&quot;;
+      currentDot = (currentDot + 1) % dots.length;
+    });
+  &amp;lt;/script&amp;gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Ejercicio 2:</summary></entry><entry><title type="html">Ejercicio-1</title><link href="/jekyll/update/2020/03/14/Ejercicio1.html" rel="alternate" type="text/html" title="Ejercicio-1" /><published>2020-03-14T20:55:08+00:00</published><updated>2020-03-14T20:55:08+00:00</updated><id>/jekyll/update/2020/03/14/Ejercicio1</id><content type="html" xml:base="/jekyll/update/2020/03/14/Ejercicio1.html">&lt;h5 id=&quot;ejercicio-1&quot;&gt;Ejercicio 1:&lt;/h5&gt;
+
+&lt;p&gt;Censored Keyboard: program a text field (an input tag) where the letters Q, W, and X cannot be typed into.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-JavaScript&quot;&gt;&amp;lt;input type=&quot;text&quot;&amp;gt;
+&amp;lt;script&amp;gt;
+  var field = document.querySelector(&quot;input&quot;);
+  field.addEventListener(&quot;keydown&quot;, function(event) {
+    if (event.keyCode == &quot;Q&quot;.charCodeAt(0) ||
+        event.keyCode == &quot;W&quot;.charCodeAt(0) ||
+        event.keyCode == &quot;X&quot;.charCodeAt(0))
+      event.preventDefault();
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Ejercicio 1:</summary></entry><entry><title type="html">Default actions</title><link href="/jekyll/update/2020/03/14/Default-actions.html" rel="alternate" type="text/html" title="Default actions" /><published>2020-03-14T20:55:07+00:00</published><updated>2020-03-14T20:55:07+00:00</updated><id>/jekyll/update/2020/03/14/Default-actions</id><content type="html" xml:base="/jekyll/update/2020/03/14/Default-actions.html">&lt;p&gt;&lt;strong&gt;Default actions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;El metodo &lt;strong&gt;preventDefault&lt;/strong&gt; permite al usuario a configurar el comportamiento de la pagina evitando que funcione de manera normal, por lo con este método podremos crear atajos en nuestra pagina mediante teclado o menú, aunque existen algunas limitaciones dependiendo del navegador en el que nos encontremos.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;a href=&quot;https://developer.mozilla.org/&quot;&amp;gt;MDN&amp;lt;/a&amp;gt;
+&amp;lt;script&amp;gt;
+  let link = document.querySelector(&quot;a&quot;);
+  link.addEventListener(&quot;click&quot;, event =&amp;gt; {
+    console.log(&quot;Nope.&quot;);
+    event.preventDefault();
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Default actions</summary></entry><entry><title type="html">Jekyll y Github-Pages</title><link href="/jekyll/update/2020/03/14/Jekyll-gh-pages.html" rel="alternate" type="text/html" title="Jekyll y Github-Pages" /><published>2020-03-14T20:55:07+00:00</published><updated>2020-03-14T20:55:07+00:00</updated><id>/jekyll/update/2020/03/14/Jekyll-gh-pages</id><content type="html" xml:base="/jekyll/update/2020/03/14/Jekyll-gh-pages.html">&lt;h5 id=&quot;jekyll-y-github-pages&quot;&gt;Jekyll y Github-Pages&lt;/h5&gt;
+
+&lt;p&gt;Para la instalacion de Jekyll deberemos de tener en cuenta que version de ruby tenemos instalada en nuestra maquina, debido a que hay versiones que da problemas.&lt;/p&gt;
+
+&lt;p&gt;La practica he usado tres versiones y la unica que he conseguido que me funciones es con la versión [2.3.0].&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para comenzar con el uso de esta herramienta comenzaremos con un &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle init&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Una vez generado el Gemfile le añadiremos ` gem ‘github-pages’, group: :jekyll_plugins`&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Realizaremos un &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; para instalar Jekyll&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ahora usaremos el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Crearemos un directorio con &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Entraremos en el directorio creado y pondremos &lt;code class=&quot;highlighter-rouge&quot;&gt;nmp init&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Instaleremos el modulo de gh-pages: &lt;code class=&quot;highlighter-rouge&quot;&gt;nmp i gh-pages&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Deberemos de añadir la siguiente linea al archivo package.json que se nos creo anteriormente &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;deploy&quot;:&quot;gh-pages -d _site&quot;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quedara de la siguiente manera&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Javascript&quot;&gt;{
+  &quot;name&quot;: &quot;informe&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;deploy&quot;:&quot;gh-pages -d _site&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;amp;&amp;amp; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;gh-pages&quot;: &quot;^2.2.0&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se crea el site con bundle exec jekyll build y luego se ejecuta el comando npm run deploy, de esta manera ya tendremos acceso a la pagina.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Jekyll y Github-Pages</summary></entry><entry><title type="html">Event handlers</title><link href="/jekyll/update/2020/03/14/EVENT-HANDLERS.html" rel="alternate" type="text/html" title="Event handlers" /><published>2020-03-14T20:55:06+00:00</published><updated>2020-03-14T20:55:06+00:00</updated><id>/jekyll/update/2020/03/14/EVENT-HANDLERS</id><content type="html" xml:base="/jekyll/update/2020/03/14/EVENT-HANDLERS.html">&lt;p&gt;&lt;strong&gt;Event handlers&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Los controladores de eventos se tratan de aquellas funciones que nos permite hacer una función cuando pulsamos en esta.&lt;/p&gt;
+
+&lt;p&gt;Con el codigo siguiente lo que haremos sera leer cuando el usuario hace click en cualquier lado de la ventana del navegador ya que el enlace “window” permite resgistrar los click en toda la pagina.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;&amp;lt;p&amp;gt;Click this document to activate the handler.&amp;lt;/p&amp;gt;
+&amp;lt;script&amp;gt;
+  window.addEventListener(&quot;click&quot;, () =&amp;gt; {
+    console.log(&quot;You knocked?&quot;);
+  });
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Event handlers</summary></entry><entry><title type="html">README</title><link href="/jekyll/update/2020/03/14/README.html" rel="alternate" type="text/html" title="README" /><published>2020-03-14T20:49:06+00:00</published><updated>2020-03-14T20:49:06+00:00</updated><id>/jekyll/update/2020/03/14/README</id><content type="html" xml:base="/jekyll/update/2020/03/14/README.html">&lt;h2 id=&quot;handling-events&quot;&gt;Handling Events&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Autor : David Rodriguez Rodriguez&lt;/strong&gt;&lt;/p&gt;
 
@@ -146,7 +346,42 @@
 
 &lt;h5 id=&quot;focus-event&quot;&gt;Focus Event:&lt;/h5&gt;
 
+&lt;p&gt;A medida que el usuario navega por una pagina, es inevitable que tenga que interactuar con alguno de los elementos dispuestos dentro
+del contenido de dicha pagina. Se le llama &lt;code class=&quot;highlighter-rouge&quot;&gt;focus&lt;/code&gt; a aquel elemento que esta actualmente en interaccion directa con el usuario, de 
+modo que si el usuario selecciona un &lt;code class=&quot;highlighter-rouge&quot;&gt;textbox&lt;/code&gt; dicho elemento sera el que tenga el focus actual de la ventana, lo que le permitira al
+usuario al momento de escribir, que el contenido sea enviado a dicha &lt;code class=&quot;highlighter-rouge&quot;&gt;textbox&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Podemos encontrar un ejemplo de esto, en donde tendremos dos campos para introducir informacion, y vemos que
+al principio los marcos son de color negro, y al seleccionarlos, obtienen el focus y cambian a un gris.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-HTML&quot;&gt;    &amp;lt;p&amp;gt;Name: &amp;lt;input type=&quot;text&quot; data-help=&quot;Your full name&quot;&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;p&amp;gt;Age: &amp;lt;input type=&quot;text&quot; data-help=&quot;Your age in years&quot;&amp;gt;&amp;lt;/p&amp;gt;
+    &amp;lt;p id=&quot;help&quot;&amp;gt;&amp;lt;/p&amp;gt;
+
+    &amp;lt;script&amp;gt;
+    let help = document.querySelector(&quot;#help&quot;);
+    let fields = document.querySelectorAll(&quot;input&quot;);
+    for (let field of Array.from(fields)) {
+        field.addEventListener(&quot;focus&quot;, event =&amp;gt; {
+        let text = event.target.getAttribute(&quot;data-help&quot;);
+        help.textContent = text;
+        });
+        field.addEventListener(&quot;blur&quot;, event =&amp;gt; {
+        help.textContent = &quot;&quot;;
+        });
+    }
+    &amp;lt;/script&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;h5 id=&quot;load-event&quot;&gt;Load event&lt;/h5&gt;
+
+&lt;p&gt;El evento &lt;code class=&quot;highlighter-rouge&quot;&gt;load&lt;/code&gt; es lanzado al cargar una pagina. Esto usualmente es usado para programar la inicializacion de acciones que requieran
+de todo el documento para ser ejecutados.&lt;/p&gt;
+
+&lt;p&gt;Por otro lado cuando una pagina es cerrada o redirigida hacia otro sitio, tenemos que se ejecuta el evento &lt;code class=&quot;highlighter-rouge&quot;&gt;beforeunload&lt;/code&gt;. El uso 
+principal del evento es para prevenir hacciones accidentales del usuario tales como cerrar un documento. Si se previene el 
+comportamientocon este evento y se establece una propiedad &lt;code class=&quot;highlighter-rouge&quot;&gt;returnValue&lt;/code&gt; dentro de un evento, sobre un string, el buscador nos mostrara 
+un dialogo preguntando si realmente se quiere salir de la pagina.&lt;/p&gt;
 
 &lt;h5 id=&quot;events-and-the-event-loop&quot;&gt;Events and the event loop&lt;/h5&gt;
 
@@ -245,4 +480,59 @@
         asTabs(document.querySelector(&quot;#panel&quot;));
     &amp;lt;/script&amp;gt;
 
-&lt;/code&gt;&lt;/pre&gt;</content><author><name></name></author><summary type="html">Handling Events</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&quot;jekyll-y-github-pages&quot;&gt;Jekyll y Github-Pages&lt;/h5&gt;
+
+&lt;p&gt;Para la instalacion de Jekyll deberemos de tener en cuenta que version de ruby tenemos instalada en nuestra maquina, debido a que hay versiones que da problemas.&lt;/p&gt;
+
+&lt;p&gt;La practica he usado tres versiones y la unica que he conseguido que me funciones es con la versión [2.3.0].&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Para comenzar con el uso de esta herramienta comenzaremos con un &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle init&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Una vez generado el Gemfile le añadiremos ` gem ‘github-pages’, group: :jekyll_plugins`&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Realizaremos un &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; para instalar Jekyll&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ahora usaremos el comando &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install jekyll&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Crearemos un directorio con &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Entraremos en el directorio creado y pondremos &lt;code class=&quot;highlighter-rouge&quot;&gt;nmp init&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Instaleremos el modulo de gh-pages: &lt;code class=&quot;highlighter-rouge&quot;&gt;nmp i gh-pages&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Deberemos de añadir la siguiente linea al archivo package.json que se nos creo anteriormente &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;deploy&quot;:&quot;gh-pages -d _site&quot;&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Quedara de la siguiente manera&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Javascript&quot;&gt;{
+  &quot;name&quot;: &quot;informe&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;deploy&quot;:&quot;gh-pages -d _site&quot;,
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;amp;&amp;amp; exit 1&quot;
+  },
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;dependencies&quot;: {
+    &quot;gh-pages&quot;: &quot;^2.2.0&quot;
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Se crea el site con bundle exec jekyll build y luego se ejecuta el comando npm run deploy, de esta manera ya tendremos acceso a la pagina.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Handling Events</summary></entry></feed>
