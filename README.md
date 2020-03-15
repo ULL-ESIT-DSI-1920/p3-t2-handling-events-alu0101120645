@@ -183,20 +183,6 @@ un dialogo preguntando si realmente se quiere salir de la pagina.
 
 
 
-##### Events and the event loop
-
-##### Timers
-
-
-
-##### Debouncing
-
-##### Summary
-
-
-
-
-
 
 ### Ejercicios:
 

@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Ejercicio-2"
+date:   2020-03-14 20:55:09 +0000
+categories: jekyll update
+---
+##### Ejercicio 2: 
+
+Mouse trail: a series of images that would follow the mouse pointer as you moved it across the page.
+
+```HTML
+<style>
+    .trail {
+        position: absolute;
+        height: 5px; width: 5px;
+        border-radius: 4px;
+        background: black;
+    }
+    body {
+        height: 300px;
+    }
+</style>
+<body>
+    <script>
+    var dots = [];
+    for (var i = 0; i <= 10; i++) {
+      var node = document.createElement("div");
+      node.className = "trail";
+      document.body.appendChild(node);
+      dots.push(node);
+    }
+    var currentDot = 0;
+    
+    addEventListener("mousemove", function(event) {
+      var dot = dots[currentDot];
+      dot.style.left = (event.pageX - 3) + "px";
+      dot.style.top = (event.pageY - 3) + "px";
+      currentDot = (currentDot + 1) % dots.length;
+    });
+  </script>
+
+
+```
