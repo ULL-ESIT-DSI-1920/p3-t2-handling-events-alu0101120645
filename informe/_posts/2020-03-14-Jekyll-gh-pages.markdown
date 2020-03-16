@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jekyll y Github-Pages"
-date:   2020-03-14 20:55:07 +0000
+date:   2020-03-14 20:55:19 +0000
 categories: jekyll update
 ---
 ##### Jekyll y Github-Pages
